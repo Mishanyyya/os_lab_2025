@@ -35,7 +35,6 @@ int main(int argc, char *argv[]) {
         free(new_argv);
         exit(1);
     } else {
-        // Родитель ждёт завершения ребёнка
         int status;
         waitpid(child_pid, &status, 0);
 

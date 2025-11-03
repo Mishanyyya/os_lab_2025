@@ -4,7 +4,6 @@
 #include <sys/wait.h>
 
 int main() {
-    printf("Создаю зомби-процесс...\n");
     
     pid_t pid = fork();
     

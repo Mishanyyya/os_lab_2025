@@ -12,7 +12,7 @@ sequential_min_max : utils.o find_min_max.o sequential_min_max.c utils.h find_mi
 parallel_min_max : utils.o find_min_max.o parallel_min_max.c utils.h find_min_max.h
 	$(CC) -o parallel_min_max utils.o find_min_max.o parallel_min_max.c $(CFLAGS)
 
-# для программы-запускателя (задание 4)
+# (задание 4)
 run_seq : run_seq.c
 	$(CC) -o run_seq run_seq.c $(CFLAGS)
 
